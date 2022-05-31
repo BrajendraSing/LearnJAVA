@@ -1,5 +1,4 @@
 //Extending to the Thread class
-
 class Main {
     public static void main(String[] args) {
        MyThread th = new MyThread();
