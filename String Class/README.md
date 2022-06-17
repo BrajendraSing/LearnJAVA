@@ -345,14 +345,54 @@ System.out.println(s);                                              // Output : 
 
 ## Additional String Methods
 ```java
-1. boolean contains(CharSequence str);
-1. static String format(String fmtstr, Object ... args);
-1. boolean isEmpty( );
-1. boolean matches(string regExp);
-1. String replaceFirst(String regExp, String newStr);
-1. String replaceAll(String regExp, String newStr);
-1. String[ ] split(String regExp);
-1. String[ ] split(String regExp, int max);
-1. CharSequence subSequence(int startIndex,
-1. int stopIndex);
+boolean contains(CharSequence str);
 ```
+
+```java
+String s1 = "Hello ";
+System.out.println(s1.contains("lo"));  //true
+```
+
+```java
+static String format(String fmtstr, Object ... args);
+```
+```java
+String h = "Hello";
+String s = String.format("%s World!",h);
+System.out.println(s);                                       // Output : Hello World!
+```
+
+```java
+boolean isEmpty( );
+```
+```java
+String s = new String();
+String s1 = "Hello";
+System.out.println(s.isEmpty());                           // Output : true
+System.out.println(s1.isEmpty());                          // Output : false
+```
+
+```java
+boolean matches(string regExp);
+```
+```java
+String s = "Hello World!";
+System.out.println(s.matches("Hello(.*)"));                  // Output : true
+```
+
+```
+String replaceFirst(String regExp, String newStr);
+```
+```
+String s = "Hello Hello World";
+System.out.println(s.replaceFirst("Hello", "Hii"));           // Output : Hii Hello World
+```
+
+```
+6. String replaceAll(String regExp, String newStr);
+7. String[ ] split(String regExp);
+8. String[ ] split(String regExp, int max);
+9. CharSequence subSequence(int startIndex, int stopIndex);
+```
+`Here, Some of the string methods are discussed but not all`
+
