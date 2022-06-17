@@ -437,3 +437,59 @@ System.out.println(s.subSequence(2, 10));                 // Output : llo Worl
 ```
 `Here, Some of the string methods are discussed but not all`
 
+
+---
+---
+## Character to String
+```java
+char ch = 'A';
+String s = Character.toString(ch);
+System.out.println(s);                                                    // Output : A
+```
+---
+## String to Character
+```java
+String s = "Hello World";
+char ch = s.charAt(0);
+System.out.println(ch);                                               // Output : H
+```
+
+## String to Integer
+```java
+String s = "10";
+int num = Integer.parseInt(s);
+System.out.println(num*2);                                          // Output : 20
+```
+## Integer to String
+```java
+int num = 10;
+String s = String.valueOf(num);
+System.out.println(s);                                             // Output : 10
+```
+
+## String to Float
+```java
+String s = "10.5";
+float f = Float.parseFloat(s);
+System.out.println(f*2);                                         // Output : 21.0 
+```
+## Float to String
+```java
+float f = 10.5f;
+String s = String.valueOf(f);
+System.out.println(s);                                          // Output : 10.5
+```
+`or`
+```java
+float f=89.7F;  
+String s=Float.toString(f);  
+System.out.println(s);                                        // Output : 89.7
+```
+
+## String to ArrayList
+ String str = "Hello World";
+String[] strSplit = str.split("");
+
+ArrayList<String> strList = new ArrayList<String>(
+            Arrays.asList(strSplit));
+System.out.println(strList);  /[H, e, l, l, o,  , W, o, r, l, d]
