@@ -200,9 +200,9 @@ System.out.println(s1.equalsIgnoreCase(s4));        // Output : true
  ### startsWith( ) and endsWith( )
  ```java
 String s = "Java with Brajendra";
-System.out.println(s.endsWith("dra"));                // Output : true
-System.out.println(s.startsWith("Java"));            // Output : true
-System.out.println(s.startsWith("java"));            // Output : false
+System.out.println(s.endsWith("dra"));                 // Output : true
+System.out.println(s.startsWith("Java"));             // Output : true
+System.out.println(s.startsWith("java"));             // Output : false
  
  ```
  
@@ -216,11 +216,11 @@ String s = "Java with Brajendra";
 String s1 = new String(s);
 String s2 = "Java with Brajendra";
         
-System.out.println(s == s2);                         // Output : true
-System.out.println(s.equals(s2));                   // Output : true
+System.out.println(s == s2);                          // Output : true
+System.out.println(s.equals(s2));                     // Output : true
         
-System.out.println(s == s1);                      // Output : false
-System.out.println(s.equals(s1));                // Output : true
+System.out.println(s == s1);                         // Output : false
+System.out.println(s.equals(s1));                    // Output : true
         
  ```
 ### compareTo( )
@@ -272,7 +272,7 @@ String s1 = s.substring(5);
 System.out.println(s1);                                   // Output : with Brajendra
         
 String s2 = s.substring(5, 10);
-System.out.println(s2);                                 // Output : with 
+System.out.println(s2);                                   // Output : with 
 ```
 
 ### concat( )
@@ -282,10 +282,10 @@ String s2 = "with";
 String s3 = "Brajendra";
         
 String s = s1.concat(s2);
-System.out.println(s);             // Output : Javawith
+System.out.println(s);                                   // Output : Javawith
        
 String s4 = s.concat(s3);
-System.out.println(s4);            // Output : JavawithBrajendra
+System.out.println(s4);                                 // Output : JavawithBrajendra
 ```
 
 ### replace( )
@@ -326,8 +326,8 @@ String toUpperCase( );
 
 ```java
 String s = "Hello World";
-System.out.println(s.toUpperCase());                                        // Output : HELLO WORLD
-System.out.println(s.toLowerCase());                                        // Output : hello world
+System.out.println(s.toUpperCase());                                 // Output : HELLO WORLD
+System.out.println(s.toLowerCase());                                 // Output : hello world
 ```
 
 ## Joining Strings
@@ -344,15 +344,16 @@ System.out.println(s);                                              // Output : 
 ```
 
 ## Additional String Methods
+1. contains()
 ```java
 boolean contains(CharSequence str);
 ```
 
 ```java
 String s1 = "Hello ";
-System.out.println(s1.contains("lo"));  //true
+System.out.println(s1.contains("lo"));                          // Output : true
 ```
-
+2. format()
 ```java
 static String format(String fmtstr, Object ... args);
 ```
@@ -361,7 +362,7 @@ String h = "Hello";
 String s = String.format("%s World!",h);
 System.out.println(s);                                       // Output : Hello World!
 ```
-
+3. isEmpty()
 ```java
 boolean isEmpty( );
 ```
@@ -371,7 +372,7 @@ String s1 = "Hello";
 System.out.println(s.isEmpty());                           // Output : true
 System.out.println(s1.isEmpty());                          // Output : false
 ```
-
+4. matches()
 ```java
 boolean matches(string regExp);
 ```
@@ -379,7 +380,7 @@ boolean matches(string regExp);
 String s = "Hello World!";
 System.out.println(s.matches("Hello(.*)"));                  // Output : true
 ```
-
+5. replaceFirst()
 ```java
 String replaceFirst(String regExp, String newStr);
 ```
@@ -387,7 +388,7 @@ String replaceFirst(String regExp, String newStr);
 String s = "Hello Hello World";
 System.out.println(s.replaceFirst("Hello", "Hii"));           // Output : Hii Hello World
 ```
-
+6. replaceAll()
 ```java
 String replaceAll(String regExp, String newStr);
 ```
@@ -395,7 +396,7 @@ String replaceAll(String regExp, String newStr);
 String s = "Hello Hello World";
 System.out.println(s.replaceAll("Hello", "Hii"));              // Output  : Hii Hii World
 ```
-
+7. split()
 ```java
 String[ ] split(String regExp);
 ```
@@ -414,7 +415,7 @@ for(String x : str2)
 }                                                           // Output : Hello World
                                            
 ```
-
+8. split()
 ```java
 String[ ] split(String regExp, int max);
 ```
@@ -426,7 +427,7 @@ for(String x : str)
     System.out.print(x + " ");
 }                                                         // Output  : H e l l o World 
 ```
-
+9. subSequence
 ```java
 CharSequence subSequence(int startIndex, int stopIndex);
 ```
