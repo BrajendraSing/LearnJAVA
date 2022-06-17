@@ -223,3 +223,36 @@ char[ ] toCharArray( )
         System.out.println(s.equals(s1));                // Output : true
         
  ```
+### compareTo( )
+```java
+int compareTo(String str);
+int compareToIgnoreCase(String str);
+```
+
+---
+## Searching Strings
+To search for the first occurrence of a character
+```java
+int indexOf(int ch)
+```
+To search for the last occurrence of a character
+```java
+int lastIndexOf(int ch)
+```
+`Here, ch is the character being sought`
+
+To search for the first or last occurrence of a substring
+```java
+int indexOf(String str)
+```
+```java
+int lastIndexOf(String str)
+```
+`Here, str specifies the substring.`
+You can specify a starting point for the search using these forms:
+```java
+int indexOf(int ch, int startIndex)
+int lastIndexOf(int ch, int startIndex)
+int indexOf(String str, int startIndex)
+int lastIndexOf(String str, int startIndex)
+```
