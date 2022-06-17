@@ -18,11 +18,11 @@ String s = new String(chars);
 String(char chars[ ], int startIndex, int numChars);
 ```
 ###### Example 
- `<p>Here, startIndex specifies the index at which the subrange begins, and numChars specifies
-the number of characters to use. Here is an example:</p>`
+ `Here, startIndex specifies the index at which the subrange begins, and numChars specifies
+the number of characters to use. Here is an example:`
 ```java
 char chars[] = { 'a', 'b', 'c', 'd', 
 ```
 
-`This is a paragraph`
+``This is a paragraph``
 
