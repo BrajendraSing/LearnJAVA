@@ -116,3 +116,28 @@ class Box {
 
 ```
 ###### If you don't override the toString() method in this class then ***` System.out.println(obj);`*** print the address of the object not the value
+
+---
+
+## Character Extraction
+<br>
+### To extract a single character from a String
+```java
+char charAt(int where);
+```
+```java
+String name = "Brajendra Singh";
+char ch = name.charAt(5);
+System.out.println(ch);                             // Output : n
+```
+
+### To extract more than one character at a time
+```java
+void getChars(int sourceStart, int sourceEnd, char target[ ], int targetStart);
+```
+
+```java
+
+
+```
+
