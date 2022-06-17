@@ -60,3 +60,60 @@ String(String strObj);
         String s = new String("Brajendra Singh");
         System.out.println(s.length());              // Output : 15         
  ```
+ 
+ 
+ 
+ ## String Concatenation
+ ```java
+String age = "23";
+String s = "He is " + age + " years old.";
+System.out.println(s);                          // Output : He is 23 years old.
+```
+
+###### Using concatenation to prevent long lines.
+```java
+ String longStr = "This could have been " +
+ "a very long line that would have " +
+ "wrapped around. But string concatenation " +
+ "prevents this.";
+ System.out.println(longStr);
+```
+
+### String Concatenation with Other Data Types
+```java
+int age = 23;
+String s = "He is " + age + " years old.";
+System.out.println(s);                  // Output : He is 23 years old.
+```
+
+## String Conversion and toString( )
+ `When Java converts data into its string representation during concatenation, it does so by
+calling one of the overloaded versions of the string conversion method valueOf( ) defined
+by String. valueOf( ) is overloaded for all the primitive types and for type Object. For the
+primitive types, valueOf( ) returns a string that contains the human-readable equivalent
+of the value with which it is called. For objects, valueOf( ) calls the toString( ) method on the
+object.`
+
+```java
+class Box {
+    int height;
+    int width;
+    Box(int height, int width)
+    {
+        this.height = height;
+        this.width = width;
+    }
+    
+    public String toString()
+    {
+        return "The Height of the box is : " + height + ", Width of the box is : " + width;
+    }
+    
+    public static void main(String[] args) {
+       Box obj = new Box(10, 20);
+       System.out.println(obj);               //Output : The Height of the box is : 10, Width of the box is : 20
+    }
+}
+
+```
+###### If you don't override the toString() method in this class then *System.out.println(obj);* print the address of the object not the value
