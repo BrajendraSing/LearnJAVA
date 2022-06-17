@@ -24,5 +24,5 @@ the number of characters to use. Here is an example:</p>`
 char chars[] = { 'a', 'b', 'c', 'd', 
 ```
 
-`<p>This is a paragraph</p>`
+`This is a paragraph`
 
