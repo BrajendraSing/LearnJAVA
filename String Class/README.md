@@ -207,9 +207,9 @@ char[ ] toCharArray( )
  ```
  
  ### equals( ) Versus ==
- 'the equals( ) method compares the characters inside a String object'
+ `the equals( ) method compares the characters inside a String object`
 <br>
-'The == operator compares two object references to see whether they refer to the same instance'
+`The == operator compares two object references to see whether they refer to the same instance`
 
 ```java
         String s = "Java with Brajendra";
