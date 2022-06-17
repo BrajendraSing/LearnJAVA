@@ -249,6 +249,7 @@ int indexOf(String str)
 int lastIndexOf(String str)
 ```
 `Here, str specifies the substring.`
+<br><br>
 You can specify a starting point for the search using these forms:
 ```java
 int indexOf(int ch, int startIndex)
@@ -256,3 +257,47 @@ int lastIndexOf(int ch, int startIndex)
 int indexOf(String str, int startIndex)
 int lastIndexOf(String str, int startIndex)
 ```
+
+---
+
+## Modifying a String
+### substring( )
+```java
+String substring(int startIndex)
+String substring(int startIndex, int endIndex)
+```
+```java
+        String s = "java with Brajendra";
+        String s1 = s.substring(5);
+        System.out.println(s1);                                   // Output : with Brajendra
+        
+        String s2 = s.substring(5, 10);
+        System.out.println(s2);                                 // Output : with 
+```
+
+### concat( )
+```java
+        String s1 = "Java";
+        String s2 = "with";
+        String s3 = "Brajendra";
+        
+       String s = s1.concat(s2);
+       System.out.println(s);             // Output : Javawith
+       
+       String s4 = s.concat(s3);
+       System.out.println(s4);            // Output : JavawithBrajendra
+```
+
+### replace( )
+```java
+String replace(char original, char replacement)
+String replace(CharSequence original, CharSequence replacement)
+```
+
+```java
+        String s = "Java with Brajendra";
+        String s1 = s.replace("Java", "Programming");
+        System.out.println(s1);                         // Output : Programming with Brajendra
+```
+
+### trim( )
