@@ -380,19 +380,59 @@ String s = "Hello World!";
 System.out.println(s.matches("Hello(.*)"));                  // Output : true
 ```
 
-```
+```java
 String replaceFirst(String regExp, String newStr);
 ```
-```
+```java
 String s = "Hello Hello World";
 System.out.println(s.replaceFirst("Hello", "Hii"));           // Output : Hii Hello World
 ```
 
+```java
+String replaceAll(String regExp, String newStr);
 ```
-6. String replaceAll(String regExp, String newStr);
-7. String[ ] split(String regExp);
-8. String[ ] split(String regExp, int max);
-9. CharSequence subSequence(int startIndex, int stopIndex);
+```java
+String s = "Hello Hello World";
+System.out.println(s.replaceAll("Hello", "Hii"));              // Output  : Hii Hii World
+```
+
+```java
+String[ ] split(String regExp);
+```
+```java
+String s = "Hello World";
+String str[] = s.split("");                                 // ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"]
+for(String x : str)
+{
+  System.out.print(x + " ");
+}                                                           // Output : H e l l o   W o r l d
+                                                            
+String str2[] = s.split(" ");                               // ["Hello", "World"]
+for(String x : str2)
+{
+   System.out.print(x + " ");
+}                                                           // Output : Hello World
+                                           
+```
+
+```java
+String[ ] split(String regExp, int max);
+```
+```java
+String s = "Hello World";
+String str[] = s.split("", 6);                            // ["H", "e", "l", "l", "o"," ", "World"]
+for(String x : str)
+{
+    System.out.print(x + " ");
+}                                                         // Output  : H e l l o World 
+```
+
+```java
+CharSequence subSequence(int startIndex, int stopIndex);
+```
+```java
+String s = "Hello World";
+System.out.println(s.subSequence(2, 10));                 // Output : llo Worl
 ```
 `Here, Some of the string methods are discussed but not all`
 
