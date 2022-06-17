@@ -24,5 +24,14 @@ the number of characters to use. Here is an example:`
 char chars[] = { 'a', 'b', 'c', 'd', 
 ```
 
-``This is a paragraph``
+##### You can construct a String object that contains the same character sequence as another String object using this constructor:
+```java
+String(String strObj);
+```
 
+
+## String Length
+```java
+ String s = new String("Brajendra Singh");
+ System.out.println(s.length());
+ ```
