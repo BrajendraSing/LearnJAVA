@@ -137,7 +137,87 @@ void getChars(int sourceStart, int sourceEnd, char target[ ], int targetStart);
 ```
 
 ```java
-
+        String name = "Brajendra singh";
+        int start = 2;
+        int end = 11;
+        char ch[] = new char[end - start];
+        name.getChars(start, end, ch, 0);
+        System.out.println(ch);                     // Output : ajendra s
 
 ```
+### There is an alternative to getChars( )
+```java
+public byte[] getBytes()  
+public byte[] getBytes(Charset charset)  
+public byte[] getBytes(String charsetName)throws UnsupportedEncodingException  
+```
 
+```java
+String name = "Brajendra singh";
+        byte b[] = name.getBytes();
+        for(byte x : b)
+        {
+            System.out.print(x + " ");
+        }
+                                        // Output : 66 114 97 106 101 110 100 114 97 32 115 105 110 103 104
+```
+
+### Converting String into character array
+ ```java
+char[ ] toCharArray( )
+ ```
+ 
+ ```java
+        String name = "Brajendra singh";
+        char ch[] = name.toCharArray();
+        for(char c : ch)
+        {
+            System.out.print(c + " ");
+        }                                        // Output : B r a j e n d r a   s i n g h 
+ ```
+ 
+ ---
+ 
+ ## String Comparison
+ ### equals( ) and equalsIgnoreCase( )
+ ```java
+ boolean equals(Object str);
+ ```
+ ```java
+        String s1 = "Hello";
+        String s2 = "Hello";
+        String s3 = "Good-bye";
+        String s4 = "HELLO";
+        
+        System.out.println(s1.equals(s2));                     // Output : true
+        System.out.println(s1.equals(s3));                    // Output : false
+        System.out.println(s1.equals(s4));                   // Output : false
+        System.out.println(s1.equalsIgnoreCase(s4));        // Output : true
+ ```
+ 
+ ### startsWith( ) and endsWith( )
+ ```java
+        String s = "Java with Brajendra";
+        System.out.println(s.endsWith("dra"));                // Output : true
+        System.out.println(s.startsWith("Java"));            // Output : true
+        System.out.println(s.startsWith("java"));            // Output : false
+ 
+ ```
+ 
+ ### equals( ) Versus ==
+ 'the equals( ) method compares the characters inside a String object'
+<br>
+'The == operator compares two object references to see whether they refer to the same instance'
+
+```java
+        String s = "Java with Brajendra";
+        String s1 = new String(s);
+        String s2 = "Java with Brajendra";
+        
+        System.out.println(s == s2);                         // Output : true
+        System.out.println(s.equals(s2));                   // Output : true
+        
+        System.out.println(s == s1);                      // Output : false
+        System.out.println(s.equals(s1));                // Output : true
+        
+ ```
