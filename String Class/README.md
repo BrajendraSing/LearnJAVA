@@ -120,7 +120,8 @@ class Box {
 ---
 
 ## Character Extraction
-<br>
+
+
 ### To extract a single character from a String
 ```java
 char charAt(int where);
@@ -182,6 +183,7 @@ char[ ] toCharArray( )
  ### equals( ) and equalsIgnoreCase( )
  ```java
  boolean equals(Object str);
+ boolean equalsIgnoreCase(Object str);
  ```
  ```java
         String s1 = "Hello";
