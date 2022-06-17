@@ -2,4 +2,6 @@
 
 
 To create an empty String
-'''String s = new String();'''
+'''java
+String s = new String();
+'''
