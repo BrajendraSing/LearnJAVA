@@ -2,6 +2,7 @@
 
 
 ##### To create an empty String
-'''java
+```java
   String s = new String();
-'''
+```
+
