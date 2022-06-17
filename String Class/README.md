@@ -1,11 +1,10 @@
 # String Class in Java
-
+---
 
 ##### Create an empty String
 ```java
   String s = new String();
 ```
-
 
 ##### Create a String initialized by an array of characters
 ```java
@@ -54,7 +53,7 @@ String(String strObj);
         System.out.println(name2);                // Output : Brajendra Singh 
 ```
 
-
+---
 ## String Length
 ```java
         String s = new String("Brajendra Singh");
@@ -62,7 +61,7 @@ String(String strObj);
  ```
  
  
- 
+ ---
  ## String Concatenation
  ```java
 String age = "23";
@@ -85,7 +84,7 @@ int age = 23;
 String s = "He is " + age + " years old.";
 System.out.println(s);                  // Output : He is 23 years old.
 ```
-
+---
 ## String Conversion and toString( )
  `When Java converts data into its string representation during concatenation, it does so by
 calling one of the overloaded versions of the string conversion method valueOf( ) defined
@@ -116,4 +115,4 @@ class Box {
 }
 
 ```
-###### If you don't override the toString() method in this class then __System.out.println(obj);__ print the address of the object not the value
+###### If you don't override the toString() method in this class then ***System.out.println(obj);*** print the address of the object not the value
