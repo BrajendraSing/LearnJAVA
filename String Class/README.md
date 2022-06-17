@@ -3,7 +3,7 @@
 
 ##### Create an empty String
 ```java
-  String s = new String();
+String s = new String();
 ```
 
 ##### Create a String initialized by an array of characters
@@ -21,21 +21,21 @@ String(char chars[ ], int startIndex, int numChars);
  `Here, startIndex specifies the index at which the subrange begins, and numChars specifies
 the number of characters to use. Here is an example:`
 ```java
-  char chars[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
-  String s = new String(chars, 2, 3);
-  System.out.println(s);         // Output : cde 
+char chars[] = { 'a', 'b', 'c', 'd', 'e', 'f' };
+String s = new String(chars, 2, 3);
+System.out.println(s);         // Output : cde 
 ```
 
 ##### Create a string with string constructor
 ```java
-    String s = new String("Brajendra Singh");
-    System.out.println(s);                   // Output : Brajendra Singh
+String s = new String("Brajendra Singh");
+System.out.println(s);                   // Output : Brajendra Singh
 ```
 
 ##### Create a string by assigning the value
 ```java
-      String name = "Brajendra Singh";
-      System.out.println(name);                   // Output : Brajendra Singh
+String name = "Brajendra Singh";
+System.out.println(name);                   // Output : Brajendra Singh
       
  ```
 
@@ -46,18 +46,18 @@ String(String strObj);
 
 ###### Example
 ```java
-        String name = "Brajendra Singh";
-        String name2 = new String(name);
+String name = "Brajendra Singh";
+String name2 = new String(name);
         
-        System.out.println(name);                 // Output : Brajendra Singh 
-        System.out.println(name2);                // Output : Brajendra Singh 
+System.out.println(name);                 // Output : Brajendra Singh 
+System.out.println(name2);                // Output : Brajendra Singh 
 ```
 
 ---
 ## String Length
 ```java
-        String s = new String("Brajendra Singh");
-        System.out.println(s.length());              // Output : 15         
+String s = new String("Brajendra Singh");
+System.out.println(s.length());              // Output : 15         
  ```
  
  
@@ -138,12 +138,12 @@ void getChars(int sourceStart, int sourceEnd, char target[ ], int targetStart);
 ```
 
 ```java
-        String name = "Brajendra singh";
-        int start = 2;
-        int end = 11;
-        char ch[] = new char[end - start];
-        name.getChars(start, end, ch, 0);
-        System.out.println(ch);                     // Output : ajendra s
+String name = "Brajendra singh";
+int start = 2;
+int end = 11;
+char ch[] = new char[end - start];
+name.getChars(start, end, ch, 0);
+System.out.println(ch);                     // Output : ajendra s
 
 ```
 ### There is an alternative to getChars( )
@@ -169,12 +169,12 @@ char[ ] toCharArray( )
  ```
  
  ```java
-        String name = "Brajendra singh";
-        char ch[] = name.toCharArray();
-        for(char c : ch)
-        {
-            System.out.print(c + " ");
-        }                                        // Output : B r a j e n d r a   s i n g h 
+String name = "Brajendra singh";
+char ch[] = name.toCharArray();
+for(char c : ch)
+{
+   System.out.print(c + " ");
+}                                        // Output : B r a j e n d r a   s i n g h 
  ```
  
  ---
@@ -186,23 +186,23 @@ char[ ] toCharArray( )
  boolean equalsIgnoreCase(Object str);
  ```
  ```java
-        String s1 = "Hello";
-        String s2 = "Hello";
-        String s3 = "Good-bye";
-        String s4 = "HELLO";
+String s1 = "Hello";
+String s2 = "Hello";
+String s3 = "Good-bye";
+String s4 = "HELLO";
         
-        System.out.println(s1.equals(s2));                     // Output : true
-        System.out.println(s1.equals(s3));                    // Output : false
-        System.out.println(s1.equals(s4));                   // Output : false
-        System.out.println(s1.equalsIgnoreCase(s4));        // Output : true
+System.out.println(s1.equals(s2));                     // Output : true
+System.out.println(s1.equals(s3));                    // Output : false
+System.out.println(s1.equals(s4));                   // Output : false
+System.out.println(s1.equalsIgnoreCase(s4));        // Output : true
  ```
  
  ### startsWith( ) and endsWith( )
  ```java
-        String s = "Java with Brajendra";
-        System.out.println(s.endsWith("dra"));                // Output : true
-        System.out.println(s.startsWith("Java"));            // Output : true
-        System.out.println(s.startsWith("java"));            // Output : false
+String s = "Java with Brajendra";
+System.out.println(s.endsWith("dra"));                // Output : true
+System.out.println(s.startsWith("Java"));            // Output : true
+System.out.println(s.startsWith("java"));            // Output : false
  
  ```
  
@@ -212,15 +212,15 @@ char[ ] toCharArray( )
 `The == operator compares two object references to see whether they refer to the same instance`
 
 ```java
-        String s = "Java with Brajendra";
-        String s1 = new String(s);
-        String s2 = "Java with Brajendra";
+String s = "Java with Brajendra";
+String s1 = new String(s);
+String s2 = "Java with Brajendra";
         
-        System.out.println(s == s2);                         // Output : true
-        System.out.println(s.equals(s2));                   // Output : true
+System.out.println(s == s2);                         // Output : true
+System.out.println(s.equals(s2));                   // Output : true
         
-        System.out.println(s == s1);                      // Output : false
-        System.out.println(s.equals(s1));                // Output : true
+System.out.println(s == s1);                      // Output : false
+System.out.println(s.equals(s1));                // Output : true
         
  ```
 ### compareTo( )
@@ -267,25 +267,25 @@ String substring(int startIndex)
 String substring(int startIndex, int endIndex)
 ```
 ```java
-        String s = "java with Brajendra";
-        String s1 = s.substring(5);
-        System.out.println(s1);                                   // Output : with Brajendra
+String s = "java with Brajendra";
+String s1 = s.substring(5);
+System.out.println(s1);                                   // Output : with Brajendra
         
-        String s2 = s.substring(5, 10);
-        System.out.println(s2);                                 // Output : with 
+String s2 = s.substring(5, 10);
+System.out.println(s2);                                 // Output : with 
 ```
 
 ### concat( )
 ```java
-        String s1 = "Java";
-        String s2 = "with";
-        String s3 = "Brajendra";
+String s1 = "Java";
+String s2 = "with";
+String s3 = "Brajendra";
         
-       String s = s1.concat(s2);
-       System.out.println(s);             // Output : Javawith
+String s = s1.concat(s2);
+System.out.println(s);             // Output : Javawith
        
-       String s4 = s.concat(s3);
-       System.out.println(s4);            // Output : JavawithBrajendra
+String s4 = s.concat(s3);
+System.out.println(s4);            // Output : JavawithBrajendra
 ```
 
 ### replace( )
@@ -301,3 +301,58 @@ String replace(CharSequence original, CharSequence replacement)
 ```
 
 ### trim( )
+```java
+String trim( )
+```
+Trim the whitespaces from both side of the string
+```java
+String s = "    Hello World    ".trim();
+System.out.println(s);                                 // Output : Hello World
+```
+---
+## Data Conversion Using valueOf( )
+```java
+static String valueOf(double num);
+static String valueOf(long num);
+static String valueOf(Object ob);
+static String valueOf(char chars[ ]);
+```
+---
+## Changing the Case of Characters Within a String
+```java
+String toLowerCase( );
+String toUpperCase( );
+```
+
+```java
+String s = "Hello World";
+System.out.println(s.toUpperCase());                                        // Output : HELLO WORLD
+System.out.println(s.toLowerCase());                                        // Output : hello world
+```
+
+## Joining Strings
+```java
+static String join(CharSequence delim, CharSequence . . . strs);
+```
+```java
+String s1 = "Hello ";
+String s2 = "World";
+String s3 = "!";
+        
+String s = String.join(" ", s1, s2, s3);
+System.out.println(s);                                              // Output : Hello  World !
+```
+
+## Additional String Methods
+```java
+1. boolean contains(CharSequence str);
+1. static String format(String fmtstr, Object ... args);
+1. boolean isEmpty( );
+1. boolean matches(string regExp);
+1. String replaceFirst(String regExp, String newStr);
+1. String replaceAll(String regExp, String newStr);
+1. String[ ] split(String regExp);
+1. String[ ] split(String regExp, int max);
+1. CharSequence subSequence(int startIndex,
+1. int stopIndex);
+```
